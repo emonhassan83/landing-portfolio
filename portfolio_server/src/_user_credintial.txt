@@ -1,0 +1,14 @@
+{
+   "name": "Emma Foster",
+   "email": "emma.foster@example.com",
+   "password": "user123",
+   "contactNumber": "345-678-9012",
+   "address": "789 Maple St, Sydney, NSW 2000, Australia"
+}
+{
+   "name": "Jane Smith",
+   "email": "jane.smith@example.com",
+   "password": "user123",
+   "contactNumber": "453-678-9012",
+   "address": "789 Maple St, Sydney, NSW 2000, Australia"
+}
