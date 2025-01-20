@@ -1,0 +1,52 @@
+/* globals.css */
+
+/* Tailwind CSS Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap');
+
+/* Default color scheme */
+:root {
+  --background: #262A2C;
+  --foreground: #ededed;
+}
+
+/* Light mode theme (could be omitted if the light mode is the default) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #262A2C;
+    --foreground: #ededed;
+  }
+}
+
+/* Global body styling */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  @apply font-rubik;
+}
+
+/* Custom utilities and styles */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Font styles for Syne and Rubik */
+.syne-font {
+  font-family: "Syne", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
