@@ -9,18 +9,18 @@ const router = express.Router();
 
 router.post(
   '/add-project',
-  auth(USER_ROLE.admin),
+  auth(USER_ROLE.admin, USER_ROLE.user),
   zodValidationRequest(
-    projectValidations.createProjectValidationSchema,
+    projectValidations.createProjectValidation,
   ),
   projectControllers.addProject,
 );
 
 router.put(
   '/update-project/:id',
-  auth(USER_ROLE.admin),
+  auth(USER_ROLE.admin, USER_ROLE.user),
   zodValidationRequest(
-    projectValidations.updateProjectValidationSchema,
+    projectValidations.updateProjectValidation,
   ),
   projectControllers.updateAProject,
 );
@@ -37,7 +37,7 @@ router.get(
 
 router.delete(
   '/delete-project/:id',
-  auth(USER_ROLE.admin),
+  auth(USER_ROLE.admin, USER_ROLE.user),
   projectControllers.deleteAProject,
 );
 

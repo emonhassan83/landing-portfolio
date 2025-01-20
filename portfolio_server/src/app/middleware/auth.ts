@@ -15,7 +15,7 @@ const auth = (...requiredRoles: TUserRole[]) => {
     if (!token) {
       throw new AppError(httpStatus.UNAUTHORIZED, 'Unauthorized Access');
     }
-
+    
     //* checking if the given token is valid
     let decoded;
     try {

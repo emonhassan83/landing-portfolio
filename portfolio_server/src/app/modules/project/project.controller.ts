@@ -28,7 +28,7 @@ const addProject = catchAsync(async (req, res) => {
 
   const getAProject = catchAsync(async (req, res) => {
     const { id } = req.params;
-    const project = await ProjectServices.getAIntoDB(id, req.user);
+    const project = await ProjectServices.getAIntoDB(id);
   
     sendResponse(res, {
       statusCode: httpStatus.OK,

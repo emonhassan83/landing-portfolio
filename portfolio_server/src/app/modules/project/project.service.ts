@@ -49,12 +49,7 @@ const getAllIntoDB = async (query: Record<string, unknown>) => {
   };
 };
 
-const getAIntoDB = async (id: string, userData: JwtPayload) => {
-  const user = await User.isUserExistsByUserEmail(userData.email);
-  if (!user) {
-    throw new AppError(httpStatus.NOT_FOUND, 'This user is not found !');
-  }
-
+const getAIntoDB = async (id: string) => {
   const result = await Project.findById(id);
   return result;
 };

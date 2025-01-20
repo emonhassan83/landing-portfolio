@@ -1,11 +1,10 @@
 export type TProject = {
   name: string;
+  client: string;
+  color: string;
+  work: string[];
   image: string;
+  story: string;
+  banner_images: string[];
   description: string;
-  features: string;
-  technologies: string;
-  duration: string;
-  live_site_url: string;
-  client_site_url: string;
-  server_site_url: string;
 };
