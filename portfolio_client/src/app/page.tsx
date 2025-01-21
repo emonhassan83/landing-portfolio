@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className="text-2xl rubik-font">
-      Portfolio Homepage
+    <div className="">
+      <h1 className="font-syne text-4xl">Adaptive Logo Design for Your Brand</h1>
     </div>
   );
 }
