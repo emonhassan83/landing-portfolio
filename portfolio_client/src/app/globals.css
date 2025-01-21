@@ -9,14 +9,14 @@
 /* Default Color Scheme */
 :root {
   --background: #262A2C;
-  --foreground: #ededed;
+  --foreground: #ffffff;
 }
 
 /* Light Mode Theme */
 @media (prefers-color-scheme: light) {
   :root {
     --background: #262A2C;
-    --foreground: #ededed;
+    --foreground: #ffffff;
   }
 }
 
